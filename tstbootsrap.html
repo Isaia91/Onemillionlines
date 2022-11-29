@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Million Lines</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        nav{
+            position: fixed;
+            width: 100%;
+        }
+        .txtwhite{color: #f4f7f8;}
+        .header{
+            width: 100%;
+            height: 800px;
+            background-image: url(images\hero-image.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+        .img-container {
+            position:relative;
+        }
+        .homeImageLink {
+            position: absolute; 
+            top: calc(50% - 24px);
+            left: 0;
+            text-align: center; 
+            width: 100%; 
+            color:#f4f7f8
+        }
+        .margin_sides{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .roboto{
+            font-size: larger;
+            font-family: 'Roboto', sans-serif;
+        }
+        .margin_sections{
+            margin-right: 10%;
+        }
+
+        .footer_bg{
+            background-color:#f74c3c;
+        }
+        .jumbotron{
+            color:#f4f7f8;
+        }
+        .button {
+            background-color: #d9534f;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bolder;
+            border-radius: 8px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .margintop{
+            margin-top: 15%;
+        }
+
+        .headertitlesize{
+            font-size: 52px;
+        }
+
+        .morelines{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .navmargin{
+            margin-left: 20px;
+        }
+
+        #get-involved{
+            background-color:#f5f5f5;
+        }
+        .margin_height_sections{
+            margin-top:20px ;
+            margin-bottom:20px ;
+        }
+    
+    
+        .section_font_size{
+            color: #e74c3c;
+            text-transform: uppercase;
+        }
+        .section_font_decoration{
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 20px;
+        }
+        .sections_button{
+            background-color: white;
+            color: #e74c3c;
+            border: 2px solid #e7e7e7;
+            font-size: smaller;
+        }
+        .txt_red{
+            color:#e74c3c;
+        }
+
+        footer{
+            background-color:#f74c3c ;
+            height: 200px;
+        }
+        .last-item{
+            margin-top: 7%;
+        }
+
+
+        @media screen and (max-width: 1280px){
+            #home{
+                width:100%;
+            }
+            .morelines{
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            .margin_sections{
+            margin-left: 0%;
+            }
+            .margin_screen_1199{
+                width: 98%;
+            }
+        }
+
+        @media screen and (max-width: 991px){
+            .adjustlines{
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+
+        }
+
+        @media screen and (max-width: 767px){
+            .adjustlines{
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            .margin_screen_991{
+                width: 120%;
+            }
+            
+        }
+
+
+    </style>
+  </head>
+
+  <body class="fs-3">
+
+    <div>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="/images/top-logo.png" width="auto" height="15px" alt="" style="margin-top: 10px;margin-left: 20%;">
+              </a>
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item ">
+                    <a class="nav-link" href="home">Who we are</a>
+                </li>
+                <li class="nav-item navmargin">
+                    <a class="nav-link" href="about">Get-involved</a>
+                </li>
+            </ul>
+        </nav>
+ 
+    
+  
+
+    <div id="home">
+        <!-- Jumbotron -->
+        <div class="row ">
+            <div class="p-5 text-center bg-image rounded-3" style="background-image: url('/images/hero-image.jpg');height: 100%;">
+                <div class="morelines">
+                    <div class="d-flex justify-content-center align-items-center h-200 margin_screen_1199 ">
+                        <div class="roboto margintop">
+                            <h1 class="mt-3 headertitlesize txtwhite margin_screen_991 ">Our goal is to inspire Tallahassee to write 1,000,000 lines of code_</h1>
+                            <h4 class="mt-3 txtwhite adjustlines">All over the country people are taking the <strong> HOUR OF CODE </strong> challenge issued by <strong>CODE.org</strong>.Millions of lines of code are being written.In the capital of Florida,Tallahasse, the community is taking the challenge and our goal is to write 1,000,000 lines of codes_</p>
+                            </h4>
+                            <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
+                            <img src="/images/code.png" alt="Logo HTML w3" style="width:90px; height:auto" class="d-block mx-auto mt-5">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div id="who">
+        <div class="container">
+            <div class="row margin_screen_1199">
+                <img src="/images/academy-brand-med.png" alt="Logo HTML w3" style="width:200px; height:auto" class="d-block mx-auto mt-5">
+
+          
+                <h3 class="text-center margin_height_sections roboto section_font_size section_font_decoration">who we are</h3>
+                
+                <div class="margin_sections margin_height_sections">
+                    <p class="text-center">We are <span class="txt_red">MASSIVE ACADEMY</span>. WWe aim to improve education through both method -effective project -based learning - and material<br> -by teaching skills that are applicable to improving your life today.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="get-involved">
+        <div class="container">
+            <div class="row margin_screen_1199 margin_screen_991">
+                <h3 class="text-center margin_height_sections roboto section_font_size section_font_decoration">Get Involved</h3>
+                
+                <div class="col-md-4 text-center margin_height_sections">
+                    <i class="fa-solid fa-circle-user fa-4x icons_margin"></i>
+                    <h3 class="section_font_size">Students</h3>
+                    <p >Want to learn how to code? Want to help us to get 1,000,000 lines? Click the button below and we'll let you know how to get Involved</p>
+                    <button class="sections_button" >Start Learning"</button>
+                </div>
+                <div class="col-md-4 text-center margin_height_sections ">
+                    <i class="fa-sharp fa-solid fa-pencil-square fa-4x icons_margin"></i>
+                    <h3 class="section_font_size">Educators</h3>
+                    <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.</p>
+                    <button class="sections_button">Join The Initiative"</button>
+                </div>
+                <div class="col-md-4 text-center margin_height_sections ">
+                    <span class="fa-stack fa-2x icons_margin">
+                        <i class="fa-solid fa-square fa-stack-2x"></i>
+                        <i class="fa-solid fa-money fa-inverse fa-stack-1x"></i>
+                    </span>        
+                    <h3 class="section_font_size">Sponsors"</h3>
+                    <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding.Click to get involved.</p>
+                    <button class="sections_button">Give Support"</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 last-item">
+                        <img src="/images/one-million-bottom-brand.png">
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+
+  </body>
+</html>
